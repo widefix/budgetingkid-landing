@@ -1,0 +1,55 @@
+.headerContainer {
+    @apply relative z-10 xl:pt-6;
+    &:before {
+        content: '';
+        @apply bg-primary;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+    }
+
+    @media screen(xl) {
+        height: 723px;
+    }
+}
+
+.defaultPadding {
+    @apply p-4 relative;
+    @media screen(xl) {
+        padding: 0 106px;
+    }
+}
+
+.whyContainer {
+    @apply relative -mt-20 pt-32 z-0 overflow-hidden;
+    &:before {
+        content: '';
+        @apply bg-background-global;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%);
+    }
+}
+
+.testimonialsContainer {
+    @apply relative;
+    height: 560px;
+    &:before {
+        content: '';
+        @apply bg-background-global;
+        background-repeat: repeat;
+        background-image: url('/images/testimonial-pattern.png');
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+    }
+}
