@@ -50,6 +50,7 @@ const config: Config = {
         inform: '#e4f2ff',
       },
       text: {
+        neutral: '#212121',
         primary: {
           light: '#5F6675',
           dark: '#ffffff',

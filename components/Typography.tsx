@@ -10,12 +10,16 @@ export function H2({ children }: PropsWithChildren) {
   );
 }
 
-export function H3({ children }: PropsWithChildren) {
+export function H3({
+  children,
+  className,
+}: PropsWithChildren<{ className?: string }>) {
   return (
     <h3
       className={classNames(
         frankRuhlLibre.className,
-        'text-text-primary-light text-[44px] font-bold leading-[48px]'
+        'text-text-neutral text-[44px] font-bold leading-[48px]',
+        className
       )}
     >
       {children}
@@ -32,7 +36,7 @@ export function H4({ children, className }: PropsWithChildren<H4Props>) {
     <h4
       className={classNames(
         frankRuhlLibre.className,
-        'text-text-primary-light text-[32px] font-medium tracking-tight mb-4',
+        'text-text-neutral text-[32px] font-medium tracking-tight mb-4',
         className
       )}
     >

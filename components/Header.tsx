@@ -13,25 +13,29 @@ export default function Header() {
       className="rounded-2xl bg-white p-4 w-full flex flex-col xl:flex-row items-center"
     >
       <div className={'mr-18'}>
-        <Image src={logoImg} alt={'Budgetkid logo'} />
+        <Link href={'/'}>
+          <Image src={logoImg} alt={'Budgetkid logo'} />
+        </Link>
       </div>
-      <ul className={'flex flex-col xl:flex-row xl:gap-16 xl:ml-[72px]'}>
-        <li>
-          <Link className={HEADER_LINK_CLASSES} href="">
-            How it works
-          </Link>
-        </li>
-        <li>
-          <Link className={HEADER_LINK_CLASSES} href="">
-            FAQs
-          </Link>
-        </li>
-        <li>
-          <Link className={HEADER_LINK_CLASSES} href="">
-            About
-          </Link>
-        </li>
-      </ul>
+      <nav role="navigation">
+        <ul className={'flex flex-col xl:flex-row xl:gap-16 xl:ml-[72px]'}>
+          <li>
+            <Link className={HEADER_LINK_CLASSES} href="">
+              How it works
+            </Link>
+          </li>
+          <li>
+            <Link className={HEADER_LINK_CLASSES} href="">
+              FAQs
+            </Link>
+          </li>
+          <li>
+            <Link className={HEADER_LINK_CLASSES} href="">
+              About
+            </Link>
+          </li>
+        </ul>
+      </nav>
       <ul className="flex gap-4 ml-auto">
         <li>
           <Button as={Link} href={'/'}>

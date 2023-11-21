@@ -1,55 +1,96 @@
 .headerContainer {
-    @apply relative z-10 xl:pt-6;
-    &:before {
-        content: '';
-        @apply bg-primary;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
-    }
+  @apply relative z-10 xl:pt-6;
+  &:before {
+    content: '';
+    @apply bg-primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+  }
 
-    @media screen(xl) {
-        height: 723px;
-    }
+  @media screen(xl) {
+    min-height: 723px;
+  }
 }
 
 .defaultPadding {
-    @apply p-4 relative;
-    @media screen(xl) {
-        padding: 0 106px;
-    }
+  @apply p-4 relative;
+  @media screen(xl) {
+    padding: 0 106px;
+  }
 }
 
 .whyContainer {
-    @apply relative -mt-20 pt-32 z-0 overflow-hidden;
-    &:before {
-        content: '';
-        @apply bg-background-global;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%);
-    }
+  @apply relative -mt-20 pt-32 z-0 overflow-hidden;
+  &:before {
+    content: '';
+    @apply bg-background-global;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%);
+  }
 }
 
 .testimonialsContainer {
-    @apply relative;
-    height: 560px;
-    &:before {
-        content: '';
-        @apply bg-background-global;
-        background-repeat: repeat;
-        background-image: url('/images/testimonial-pattern.png');
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+  @apply relative pb-[92px];
+  &:before {
+    content: '';
+    @apply bg-background-global;
+    background-repeat: repeat;
+    background-image: url('/images/testimonial-pattern.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.questionsContainer {
+  @apply relative py-32 z-10;
+
+  &:before {
+    content: '';
+    @apply bg-primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 91%);
+  }
+}
+
+.footer {
+  @apply relative pt-[184px] pb-[92px] -mt-[92px] z-0;
+  &:before {
+    content: '';
+    @apply bg-background-global;
+    background-repeat: repeat;
+    background-image: url('/images/testimonial-pattern.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  dl {
+    @apply leading-6 text-text-primary-light text-[#283248] leading-6;
+    dt {
+      @apply font-extrabold mb-[20px];
     }
+    dd {
+      @apply mb-3;
+      a {
+        @apply text-text-primary-light font-bold;
+      }
+    }
+  }
 }
