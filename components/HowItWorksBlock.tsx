@@ -11,12 +11,12 @@ import Link from 'next/link';
 
 export default function HowItWorksBlock() {
   return (
-    <section className={'pb-24'}>
-      <div className={'mt-24 mb-16 text-center'}>
+    <section className={'pb-10 md:pb-24'}>
+      <div className={'mt-10 md:mt-24 mb-16 md:text-center'}>
         <H2>How it works</H2>
         <H3> Budgeting your kids finance simpified</H3>
       </div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="md:grid md:grid-cols-2 gap-6">
         <div className={'flex flex-col p-[20px]'}>
           <div className={'mb-4'}>
             <Image src={hiw1Img} alt={'Phone'} />

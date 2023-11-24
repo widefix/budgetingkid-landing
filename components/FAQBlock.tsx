@@ -16,50 +16,52 @@ const CustomDisclosureButton: FC<
 > = ({ open, onToggle, children }) => {
   return (
     <Disclosure.Button
-      className="flex w-full justify-between text-[20px] font-bold leading-8 text-text-neutral mb-2"
+      className="flex w-full justify-between text-[20px] font-bold leading-8 text-text-neutral text-left mb-2"
       onClick={onToggle}
     >
       <span>{children}</span>
-      {open ? (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="25"
-          viewBox="0 0 24 25"
-          fill="none"
-        >
-          <path
-            d="M5 12.5H19"
-            stroke="#212121"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      ) : (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="25"
-          viewBox="0 0 24 25"
-          fill="none"
-        >
-          <path
-            d="M12 5.5V19.5"
-            stroke="#212121"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M5 12.5H19"
-            stroke="#212121"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      )}
+      <div className={'w-6 h-6 flex-0'}>
+        {open ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+          >
+            <path
+              d="M5 12.5H19"
+              stroke="#212121"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+          >
+            <path
+              d="M12 5.5V19.5"
+              stroke="#212121"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M5 12.5H19"
+              stroke="#212121"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        )}
+      </div>
     </Disclosure.Button>
   );
 };
@@ -74,7 +76,9 @@ const CustomDisclosurePanel: FC<PropsWithChildren> = ({ children }) => {
 
 const DisclosureContainer: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className={'py-8 border-b border-[#EAECF0] last-of-type:border-0'}>
+    <div
+      className={'py-4 md:py-8 border-b border-[#EAECF0] last-of-type:border-0'}
+    >
       {children}
     </div>
   );
@@ -82,11 +86,11 @@ const DisclosureContainer: FC<PropsWithChildren> = ({ children }) => {
 
 export default function FAQBlock() {
   return (
-    <section className={'flex my-28'}>
+    <section className={'md:flex mt-10 md:my-28'}>
       <div className={'w-1/3 mr-28'}>
         <H2>FAQs</H2>
         <H3>Frequantly Asked Questions</H3>
-        <div className={'mt-[20px]'}>
+        <div className={'hidden md:block md:mt-[20px]'}>
           <Image src={faqImg} alt={'FAQ'} />
         </div>
       </div>

@@ -23,7 +23,7 @@ const OutsideSliderControls: React.FC<OutsideSliderControlsProps> = ({
   onNext,
   onPrev,
 }) => (
-  <div className={'ml-auto flex gap-9'}>
+  <div className={'lg:ml-auto flex gap-9 justify-center'}>
     <button onClick={onPrev} aria-label={'Previous slide'}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -102,17 +102,31 @@ export default function WhyBlock() {
   return (
     <section>
       <H2>Why use Budgetingkid?</H2>
-      <div className="flex">
+      <div className="flex flex-col gap-4 lg:flex-row">
         <H3>Manage finance for kids like never before</H3>
         <OutsideSliderControls onNext={handleNext} onPrev={handlePrev} />
       </div>
-      <div className="pt-16 pb-32">
+      <div className="pt-4 lg:pt-16 pb-32">
         <Swiper
           autoHeight={false}
           ref={swiperRef}
-          spaceBetween={24}
-          slidesPerView={3}
+          spaceBetween={16}
+          slidesPerView={1}
           className={'overflown'}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+            1280: {
+              slidesPerView: 4,
+              spaceBetween: 32,
+            },
+          }}
         >
           <SwiperSlide>
             <SwiperSlideContent>

@@ -51,13 +51,13 @@ export default function TestimonialsBlock() {
   };
 
   return (
-    <section className="grid grid-cols-2 pt-32">
+    <section className="md:grid md:grid-cols-2 pt-24 md:pt-32">
       <div>
         <div className={'max-w-sm'}>
           <H2>Testimonials</H2>
           <H3>Listen what others say about us</H3>
         </div>
-        <div className={'flex mt-24'}>
+        <div className={'flex mt-8 md:mt-24'}>
           {[...Array(4)].map((_, index) => (
             <button
               key={index}

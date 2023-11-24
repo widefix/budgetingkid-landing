@@ -11,7 +11,7 @@ export default function Footer() {
           <Image src={logoImg} alt={'Budgetkid logo'} />
         </Link>
       </div>
-      <div className="grid grid-cols-2 gap-12">
+      <div className="lg:grid lg:grid-cols-2 lg:gap-12">
         <div className="grid grid-cols-3 gap-6">
           <dl>
             <dt>About Us</dt>
@@ -42,7 +42,7 @@ export default function Footer() {
           </dl>
         </div>
         <div>
-          <dl>
+          <dl className={'mt-4 lg:mt-0'}>
             <dt>Subscribe</dt>
             <dd>
               <p className={'font-light text-text-primary-light mb-[20px]'}>
@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={'h-px bg-[#DBD2E3] my-16'}></div>
-      <div className="flex">
+      <div className="lg:flex">
         <ul className="flex gap-3 text-sm">
           <li className={'text-text-primary-light'}>
             © {new Date().getFullYear()} Widefix
@@ -94,7 +94,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <ul className="flex gap-4 ml-auto">
+        <ul className="flex gap-4 ml-auto mt-4 lg:mt-0">
           <li>
             <Link prefetch={false} href={'/'} aria-label={'Facebook'}>
               <svg

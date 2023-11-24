@@ -7,7 +7,7 @@ import piggyBankImg from '@/public/images/piggybank.png';
 
 export default function StillQuestionsBlock() {
   return (
-    <section className={'grid grid-cols-2'}>
+    <section className={'md:grid md:grid-cols-2'}>
       <div className={'flex justify-center flex-col'}>
         <H3 className={'text-white mb-[20px]'}>Still have Questions?</H3>
         <p className={'mb-8 text-white'}>
@@ -34,7 +34,7 @@ export default function StillQuestionsBlock() {
           </svg>
         </Button>
       </div>
-      <div className={'flex'}>
+      <div className={'hidden md:flex'}>
         <div className={'ml-auto'}>
           <Image src={piggyBankImg} alt={'Piggy Bank'} />
         </div>
