@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'BudgetingKid - Foster good financial habits in your children',
-  description: 'Empower your kids with financial literacy and effortlessly manage their allowances. Sign up for our free app today and start fostering a financially savvy future for your children.',
+  description:
+    'Empower your kids with financial literacy and effortlessly manage their allowances. Sign up for our free app today and start fostering a financially savvy future for your children.',
 };
 
 export default function RootLayout({

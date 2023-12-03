@@ -10,7 +10,6 @@ export function H2({ children, id }: PropsWithChildren<{ id?: string }>) {
   );
 }
 
-
 export function H3({
   children,
   className,
