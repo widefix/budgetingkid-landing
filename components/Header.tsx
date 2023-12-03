@@ -14,7 +14,7 @@ export default function Header() {
     >
       <div className={'md:mr-10 lg:mr-18'}>
         <Link href={'/'}>
-          <Image src={logoImg} alt={'Budgetkid logo'} />
+          <Image src={logoImg} alt={'BudgetKid logo'} />
         </Link>
       </div>
       <nav role="navigation">
@@ -42,12 +42,16 @@ export default function Header() {
       </nav>
       <ul className="flex gap-4 ml-auto">
         <li>
-          <Button as={Link} href={'/'}>
+          <Button as={Link} href={'https://budgetingkid.com/users/sign_up'}>
             Join
           </Button>
         </li>
         <li>
-          <Button type={'outline'} as={Link} href={'/'}>
+          <Button
+            type={'outline'}
+            as={Link}
+            href={'https://budgetingkid.com/users/sign_in'}
+          >
             Login
           </Button>
         </li>
