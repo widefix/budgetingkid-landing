@@ -13,7 +13,7 @@ export default function HowItWorksBlock() {
   return (
     <section className={'pb-10 md:pb-24'}>
       <div className={'mt-10 md:mt-24 mb-16 md:text-center'}>
-        <H2>How it works</H2>
+        <H2 id="how-it-works">How it works</H2>
         <H3> Budgeting your kids finance simpified</H3>
       </div>
       <div className="md:grid md:grid-cols-2 gap-6">

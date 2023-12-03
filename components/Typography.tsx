@@ -2,13 +2,14 @@ import { Frank_Ruhl_Libre } from 'next/font/google';
 import { PropsWithChildren } from 'react';
 import classNames from 'classnames';
 const frankRuhlLibre = Frank_Ruhl_Libre({ subsets: ['latin'] });
-export function H2({ children }: PropsWithChildren) {
+export function H2({ children, id }: PropsWithChildren<{ id?: string }>) {
   return (
-    <h2 className={'text-style text-xl font-medium leading-7 mb-4'}>
+    <h2 className={'text-style text-xl font-medium leading-7 mb-4'} id={id}>
       {children}
     </h2>
   );
 }
+
 
 export function H3({
   children,

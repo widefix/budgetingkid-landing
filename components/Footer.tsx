@@ -67,12 +67,15 @@ export default function Footer() {
       <div className="lg:flex">
         <ul className="flex gap-3 text-sm">
           <li className={'text-text-primary-light'}>
-            © {new Date().getFullYear()} Widefix
+            © {new Date().getFullYear()}{' '}
+            <Link target="_blank" href={'https://widefix.com'}>
+              WideFix
+            </Link>
           </li>
           <li>
             <Link
               className={'text-text-button-secondary hover:underline font-bold'}
-              href={'/'}
+              href={'https://budgetingkid.com/policy#cookies'}
             >
               Cookie Settings
             </Link>
@@ -80,7 +83,7 @@ export default function Footer() {
           <li>
             <Link
               className={'text-text-button-secondary hover:underline font-bold'}
-              href={'/'}
+              href={'https://budgetingkid.com/policy'}
             >
               Privacy Policy
             </Link>
@@ -88,7 +91,7 @@ export default function Footer() {
           <li>
             <Link
               className={'text-text-button-secondary hover:underline font-bold'}
-              href={'/'}
+              href={'https://budgetingkid.com/policy#terms'}
             >
               Terms of Service
             </Link>

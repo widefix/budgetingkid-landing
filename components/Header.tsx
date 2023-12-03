@@ -24,17 +24,17 @@ export default function Header() {
           }
         >
           <li className={'flex-1'}>
-            <Link className={HEADER_LINK_CLASSES} href="">
+            <Link className={HEADER_LINK_CLASSES} href="#how-it-works">
               How it works
             </Link>
           </li>
           <li className={'flex-1'}>
-            <Link className={HEADER_LINK_CLASSES} href="">
+            <Link className={HEADER_LINK_CLASSES} href="#faq">
               FAQs
             </Link>
           </li>
           <li className={'flex-1'}>
-            <Link className={HEADER_LINK_CLASSES} href="">
+            <Link className={HEADER_LINK_CLASSES} href="#about">
               About
             </Link>
           </li>

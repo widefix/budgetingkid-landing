@@ -101,7 +101,7 @@ export default function WhyBlock() {
 
   return (
     <section>
-      <H2>Why use Budgetingkid?</H2>
+      <H2 id="about">Why use Budgetingkid?</H2>
       <div className="flex flex-col gap-4 lg:flex-row">
         <H3>Manage finance for kids like never before</H3>
         <OutsideSliderControls onNext={handleNext} onPrev={handlePrev} />

@@ -88,7 +88,7 @@ export default function FAQBlock() {
   return (
     <section className={'md:flex mt-10 md:my-28'}>
       <div className={'w-1/3 mr-28'}>
-        <H2>FAQs</H2>
+        <H2 id="faq">FAQs</H2>
         <H3>Frequantly Asked Questions</H3>
         <div className={'hidden md:block md:mt-[20px]'}>
           <Image src={faqImg} alt={'FAQ'} />
