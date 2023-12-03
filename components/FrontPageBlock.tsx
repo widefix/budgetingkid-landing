@@ -20,7 +20,12 @@ export default function FrontPageBlock() {
           Foster good financial habits in your kids just 5 minutes a week
         </h1>
         <div className={'mt-4 md:mt-[48px] flex gap-9'}>
-          <Button className={'flex gap-2'} type={'plain'} as={Link} href={'/'}>
+          <Button
+            className={'flex gap-2'}
+            type={'plain'}
+            as={Link}
+            href={'https://budgetingkid.com/users/sign_up'}
+          >
             <span className={'text-center text-xl font-medium leading-7'}>
               Get Started for free
             </span>

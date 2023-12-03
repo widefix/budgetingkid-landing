@@ -57,7 +57,11 @@ export default function HowItWorksBlock() {
         </div>
       </div>
       <div className={'mt-[20px]'}>
-        <Button className={'mx-auto'} as={Link} href={'/'}>
+        <Button
+          className={'mx-auto'}
+          as={Link}
+          href={'https://budgetingkid.com/users/sign_up'}
+        >
           <div className={'flex gap-2 items-center'}>
             <span className={'text-center text-xl font-medium leading-7'}>
               Get Started for free
