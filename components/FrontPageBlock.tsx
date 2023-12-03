@@ -49,7 +49,7 @@ export default function FrontPageBlock() {
             className={'border-white text-white'}
             type={'outline'}
             as={Link}
-            href={'/'}
+            href={'https://help.budgetingkid.com/'}
           >
             Learn More
           </Button>
