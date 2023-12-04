@@ -101,6 +101,7 @@ export default function Footer() {
           <li>
             <Link
               prefetch={false}
+              target="_blank"
               href={'https://www.facebook.com/profile.php?id=61553468415163'}
               aria-label={'Facebook'}
             >
@@ -132,7 +133,12 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link prefetch={false} href={'/'} aria-label={'Twitter'}>
+            <Link
+              prefetch={false}
+              target="_blank"
+              href={'https://twitter.com/ka8725'}
+              aria-label={'Twitter'}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -150,7 +156,12 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link prefetch={false} href={'/'} aria-label={'LinkedIn'}>
+            <Link
+              prefetch={false}
+              target="_blank"
+              href={'https://pl.linkedin.com/company/widefix'}
+              aria-label={'LinkedIn'}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
