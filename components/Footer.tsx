@@ -99,7 +99,11 @@ export default function Footer() {
         </ul>
         <ul className="flex gap-4 ml-auto mt-4 lg:mt-0">
           <li>
-            <Link prefetch={false} href={'/'} aria-label={'Facebook'}>
+            <Link
+              prefetch={false}
+              href={'https://www.facebook.com/profile.php?id=61553468415163'}
+              aria-label={'Facebook'}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
