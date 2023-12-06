@@ -24,6 +24,7 @@ export default function FrontPageBlock() {
             className={'flex gap-2'}
             type={'plain'}
             as={Link}
+            prefetch={false}
             href={'https://budgetingkid.com/users/sign_up'}
           >
             <span className={'text-center text-xl font-medium leading-7'}>

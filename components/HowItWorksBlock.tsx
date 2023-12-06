@@ -60,6 +60,7 @@ export default function HowItWorksBlock() {
         <Button
           className={'mx-auto'}
           as={Link}
+          prefetch={false}
           href={'https://budgetingkid.com/users/sign_up'}
         >
           <div className={'flex gap-2 items-center'}>

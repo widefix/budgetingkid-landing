@@ -75,6 +75,7 @@ export default function Footer() {
           <li>
             <Link
               className={'text-text-button-secondary hover:underline font-bold'}
+              prefetch={false}
               href={'https://budgetingkid.com/policy#cookies'}
             >
               Cookie Settings
@@ -83,6 +84,7 @@ export default function Footer() {
           <li>
             <Link
               className={'text-text-button-secondary hover:underline font-bold'}
+              prefetch={false}
               href={'https://budgetingkid.com/policy'}
             >
               Privacy Policy
@@ -91,6 +93,7 @@ export default function Footer() {
           <li>
             <Link
               className={'text-text-button-secondary hover:underline font-bold'}
+              prefetch={false}
               href={'https://budgetingkid.com/policy#terms'}
             >
               Terms of Service
