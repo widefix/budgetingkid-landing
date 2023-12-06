@@ -42,7 +42,11 @@ export default function Header() {
       </nav>
       <ul className="flex gap-4 ml-auto">
         <li>
-          <Button as={Link} href={'https://budgetingkid.com/users/sign_up'}>
+          <Button
+            as={Link}
+            prefetch={false}
+            href={'https://budgetingkid.com/users/sign_up'}
+          >
             Join
           </Button>
         </li>
@@ -50,6 +54,7 @@ export default function Header() {
           <Button
             type={'outline'}
             as={Link}
+            prefetch={false}
             href={'https://budgetingkid.com/users/sign_in'}
           >
             Login
