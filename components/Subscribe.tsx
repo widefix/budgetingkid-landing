@@ -40,6 +40,7 @@ export default function Subscribe() {
               const email = inputRef?.current?.value;
               if (email) {
                 callSubscribe(email);
+                inputRef.current.value = '';
               }
             }}
           >
