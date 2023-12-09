@@ -47,7 +47,7 @@ export default function Footer() {
             <dd>
               <p className={'font-light text-text-primary-light mb-[20px]'}>
                 Subscribe to stay up to date with all the latest news related to
-                Nostra and mobility.
+                BudgetingKid and financial literacy.
               </p>
               <form className={'flex gap-2 items-center'}>
                 <input
