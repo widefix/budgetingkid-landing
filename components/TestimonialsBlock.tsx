@@ -113,7 +113,7 @@ export default function TestimonialsBlock() {
               title="Freiburg, Baden-Württemberg - Germany"
               body="I thoroughly enjoyed the straightforwardness, simplicity and ease of use of the product and I would recommend resisting the urge to add more and more features and keep focusing on the essentials."
               name="Sam Harris"
-              img={require('@/public/images/ricke_s.jpeg')}
+              img={require('@/public/images/profile-bird.png')}
             />
           </SwiperSlide>
         </Swiper>
