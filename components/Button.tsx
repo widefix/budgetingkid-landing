@@ -36,7 +36,7 @@ const Button = <C extends ElementType = 'button'>({
 
   return React.createElement(
     Component,
-    { ...props, className: classes },
+    { ...props, className: classes, type: 'submit' },
     children
   );
 };

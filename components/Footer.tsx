@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import logoImg from '/public/logo.svg';
 import Link from 'next/link';
-import Button from '@/components/Button';
+import Subscribe from './Subscribe';
 
 export default function Footer() {
   return (
@@ -42,25 +42,7 @@ export default function Footer() {
           </dl>
         </div>
         <div>
-          <dl className={'mt-4 lg:mt-0'}>
-            <dt>Subscribe</dt>
-            <dd>
-              <p className={'font-light text-text-primary-light mb-[20px]'}>
-                Subscribe to stay up to date with all the latest news related to
-                BudgetingKid and financial literacy.
-              </p>
-              <form className={'flex gap-2 items-center'}>
-                <input
-                  className={
-                    'w-full border border-[#E7E7E7] rounded-[6px] py-3 px-4'
-                  }
-                  type="text"
-                  placeholder={'Your email'}
-                />
-                <Button>Join</Button>
-              </form>
-            </dd>
-          </dl>
+          <Subscribe />
         </div>
       </div>
       <div className={'h-px bg-[#DBD2E3] my-16'}></div>
