@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       'Empower your kids with financial literacy and effortlessly manage their allowances. Sign up for our free app today and start fostering a financially savvy future for your children.',
     title: 'Foster good financial habits in your kids',
-  }
+  },
 };
 
 export default function RootLayout({
