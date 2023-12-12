@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic';
 import HowItWorksBlock from '@/components/HowItWorksBlock';
 import StillQuestionsBlock from '@/components/StillQuestionsBlock';
 import Footer from '@/components/Footer';
+import Script from 'next/script';
 
 const WhyBlock = dynamic(() => import('@/components/WhyBlock'), { ssr: false });
 const TestimonialsBlock = dynamic(
@@ -19,6 +20,16 @@ const FAQBlock = dynamic(() => import('@/components/FAQBlock'), { ssr: false });
 export default function Home() {
   return (
     <>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-Q4122NBV14" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q4122NBV14');
+        `}
+      </Script>
       <div className={styles.headerContainer}>
         <div className={styles.defaultPadding}>
           <Header />
