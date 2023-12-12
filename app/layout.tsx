@@ -6,14 +6,14 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://get.budgetingkid.com'),
-  alternates: { canonical: new URL('https://budgetingkid.com') },
+  alternates: { canonical: new URL('https://get.budgetingkid.com') },
   title: 'Foster good financial habits in your kids',
   description:
     'Empower your kids with financial literacy and effortlessly manage their allowances. Sign up for our free app today and start fostering a financially savvy future for your children.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://budgetingkid.com',
+    url: 'https://get.budgetingkid.com',
     siteName: 'BudgetingKid',
     description:
       'Empower your kids with financial literacy and effortlessly manage their allowances. Sign up for our free app today and start fostering a financially savvy future for your children.',
