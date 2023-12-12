@@ -1,7 +1,11 @@
 import Image from 'next/image';
 import logoImg from '/public/logo.svg';
 import Link from 'next/link';
-import Subscribe from './Subscribe';
+import dynamic from 'next/dynamic';
+
+const DynamicSubscribe = dynamic(() => import('./Subscribe'), {
+  ssr: false,
+});
 
 export default function Footer() {
   return (
@@ -41,9 +45,7 @@ export default function Footer() {
             </dd>
           </dl>
         </div>
-        <div>
-          <Subscribe />
-        </div>
+        <DynamicSubscribe />
       </div>
       <div className={'h-px bg-[#DBD2E3] my-16'}></div>
       <div className="lg:flex">
