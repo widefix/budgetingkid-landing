@@ -38,10 +38,10 @@ export default function Footer() {
           <dl>
             <dt>Resources</dt>
             <dd>
-              <Link href={'/'}>Blogs</Link>
+              <Link href={'https://blog.budgetingkid.com/'}>Blogs</Link>
             </dd>
             <dd>
-              <Link href={'/'}>Help Center</Link>
+              <Link href={'https://help.budgetingkid.com/'}>Help Center</Link>
             </dd>
           </dl>
         </div>
