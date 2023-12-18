@@ -20,19 +20,20 @@ export default function Footer() {
           <dl>
             <dt>About Us</dt>
             <dd>
-              <Link href={'/'}>Company</Link>
+              <Link href={'https://widefix.com'} target="_blank">
+                Company
+              </Link>
             </dd>
             <dd>
-              <Link href={'/'}>Careers</Link>
-            </dd>
-            <dd>
-              <Link href={'/'}>Why Us?</Link>
+              <Link href={'https://widefix.com/services'} target="_blank">
+                Why Us?
+              </Link>
             </dd>
           </dl>
           <dl>
             <dt>Platform</dt>
             <dd>
-              <Link href={'/'}>Success Stories</Link>
+              <Link href={'https://budgetingkid.com'}>BudgetingKid app</Link>
             </dd>
           </dl>
           <dl>
